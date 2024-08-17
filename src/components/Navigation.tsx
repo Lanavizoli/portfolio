@@ -1,4 +1,5 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Link, Stack } from "@mui/material";
+import NextLink from "next/link";
 import { FC } from "react";
 
 type Link = {
@@ -8,10 +9,10 @@ type Link = {
 };
 
 const links: Link[] = [
-  { id: 0, path: "/accueil", label: "accueil" },
-  { id: 1, path: "/savoir-faire", label: "savoir-faire" },
-  { id: 2, path: "/projet", label: "projet" },
-  { id: 3, path: "/discuter", label: "discuter" },
+  { id: 0, path: "/home", label: "accueil" },
+  { id: 1, path: "/skills", label: "savoir-faire" },
+  { id: 2, path: "/projects", label: "projet" },
+  { id: 3, path: "/contact", label: "discuter" },
 ];
 
 interface NavigationProps {
@@ -36,7 +37,9 @@ export default function Navigation({ align = "end" }: NavigationProps) {
       >
         {links.map((link) => (
           <li key={link.id}>
-            <a href={link.path}>{link.label}</a>
+            <NextLink href={link.path} passHref legacyBehavior>
+              <Link>{link.label}</Link>
+            </NextLink>
           </li>
         ))}
       </Stack>

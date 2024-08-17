@@ -1,13 +1,25 @@
-import { Button, Divider, Typography } from "@mui/material";
+"use client";
+import { Button, Divider, Stack, Typography } from "@mui/material";
 import Navigation from "@/components/Navigation";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const withContactSection = !pathname.match(/^\/contact/);
   return (
-    <footer>
-      <Typography>Envie d&apos;échanger sur votre projet ?</Typography>
-      <Button variant="outlined">se rencontrer</Button>
+    <Stack component="footer" spacing={2}>
+      {withContactSection && (
+        <>
+          <Typography variant="h2">
+            Envie d&apos;échanger sur votre projet ?
+          </Typography>
+          <div>
+            <Button>se rencontrer</Button>
+          </div>
+        </>
+      )}
       <Divider />
       <Navigation align="start" />
-    </footer>
+    </Stack>
   );
 }

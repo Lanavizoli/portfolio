@@ -21,7 +21,9 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider>
             <Header />
-            <Container component="main">{children}</Container>
+            <Container component="main" sx={{ paddingTop: 8 }}>
+              {children}
+            </Container>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>

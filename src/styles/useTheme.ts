@@ -1,14 +1,14 @@
+import { lightPalette, darkPalette } from "@/styles/palette";
 import { createTheme, useMediaQuery } from "@mui/material";
-import React from "react";
+import defaultTheme from "@/styles/theme";
+import { useMemo } from "react";
 
 export default function useTheme() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  const theme = React.useMemo(
+  const theme = useMemo(
     () =>
-      createTheme({
-        palette: {
-          mode: prefersDarkMode ? "dark" : "light",
-        },
+      createTheme(defaultTheme, {
+        palette: prefersDarkMode ? darkPalette : lightPalette,
       }),
     [prefersDarkMode],
   );

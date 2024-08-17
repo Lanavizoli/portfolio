@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 
-export default function Root() {
+export default function Home() {
   return (
     <>
       <Footer />
