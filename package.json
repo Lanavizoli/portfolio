@@ -1,0 +1,46 @@
+{
+  "name": "template-next-mui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "commit": "git-cz",
+    "dev": "next dev",
+    "format": "prettier . --write",
+    "lint": "next lint",
+    "prepare": "husky",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.14",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "@mui/material-nextjs": "^5.16.6",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^22.2.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "git-cz": "^4.9.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.1",
+    "prettier-plugin-sort-imports": "^1.8.6",
+    "prettier-plugin-sort-json": "^4.0.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": "22"
+  }
+}

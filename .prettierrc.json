@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    "prettier-plugin-packagejson",
+    "prettier-plugin-sort-imports",
+    "prettier-plugin-sort-json"
+  ]
+}
