@@ -17,7 +17,7 @@ npm i
 3. Launch the app:
 
 ```sh
-npm start
+npm run dev
 ```
 
 4. Browse http://localhost:3000
@@ -26,7 +26,7 @@ npm start
 
 In the project directory, you can run:
 
-### `start`
+### `dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
