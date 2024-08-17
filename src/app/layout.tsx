@@ -4,8 +4,8 @@ import { type ReactNode } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Template Next MUI",
-  description: "Build your app",
+  title: "portfolio",
+  description: "Lana Morena portfolio",
 };
 
 export default function RootLayout({
