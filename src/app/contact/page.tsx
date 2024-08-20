@@ -24,23 +24,23 @@ export default function Contact() {
           </Typography>
         </Stack>
         <Stack flex={1} component="form" spacing={2}>
-          <InputLabel>Email</InputLabel>
-          <OutlinedInput
-            name="email"
-            placeholder="alice@wonder.land"
-            autoComplete="on"
-            fullWidth
-          />
-          <InputLabel>Nom</InputLabel>
+          <InputLabel>Qui êtes vous ?</InputLabel>
           <OutlinedInput
             name="name"
-            placeholder="Alice Wonderland"
+            placeholder="votre prénom et nom"
+            autoComplete="on"
+            fullWidth
+          />
+          <InputLabel>Votre adresse mail ?</InputLabel>
+          <OutlinedInput
+            name="email"
+            placeholder="votre.adresse@mail.com"
             fullWidth
             autoComplete="on"
           />
-          <InputLabel>Email</InputLabel>
+          <InputLabel>Votre message</InputLabel>
           <OutlinedInput
-            placeholder="Coucou, on a besoin de toi !"
+            placeholder="Contenu de votre message"
             fullWidth
             multiline
             rows={5}
